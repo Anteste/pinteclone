@@ -6,13 +6,13 @@
 {% block body %}
     <h1>Edit Pin #{{pin.id}}</h1>
 
-    {{ form_start(editPinForm) }}
+    {{ form_start(form) }}
 
-        {{ form_widget(editPinForm) }}
+        {{ form_widget(form) }}
 
         <input type="submit" value="Update  Pin" formnovalidate>
 
-    {{ form_end(editPinForm) }}
+    {{ form_end(form) }}
 
 
 	<a href="{{ path('app_home') }}">Go Back</a>

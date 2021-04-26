@@ -5,13 +5,13 @@
 {% block body %}
 	<h1>Create A Pin</h1>
 
-	{{ form_start(createPinForm) }}
+	{{ form_start(form) }}
 
-        {{ form_widget(createPinForm) }}
+        {{ form_widget(form) }}
 
         <input type="submit" value="Create Pin" formnovalidate>
         
-	{{ form_end(createPinForm) }}
+	{{ form_end(form) }}
 
 
 {% endblock %}
