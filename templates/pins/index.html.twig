@@ -3,5 +3,13 @@
 {% block title %}PinteClone{% endblock %}
 
 {% block body %}
-<h1>All Pins</h1>
+<h1> {{ pins|length }} {{ pluralize(pins|length, 'Pin', 'Pins') }}</h1>
+
+
+    {% for pin in pins %}
+        <article>
+            <h1>{{ pin.title }}</h1>
+            <p>{{ pin.description }}</p>
+        </article>
+    {% endfor %}
 {% endblock %}
