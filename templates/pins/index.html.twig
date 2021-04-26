@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}PinteClone{% endblock %}
+{% block title %}Home{% endblock %}
 
 {% block body %}
-<h1> {{ pins|length }} {{ pluralize(pins|length, 'Pin', 'Pins') }}</h1>
+    <h1> {{ pins|length }} {{ pluralize(pins|length, 'Pin', 'Pins') }}</h1>
 
 
     {% for pin in pins %}
